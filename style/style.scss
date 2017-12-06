@@ -60,7 +60,7 @@ body {
   background: #fafafa;
   border-radius: 12px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 /* ============================ Containers ========================== */
@@ -74,12 +74,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.companies-block {
+.true-systems-block {
   width: 100%;
   height: auto;
+  background-image: url('/img/bg graphics/articles-left.svg'),
+                    url('/img/bg graphics/articles-right.svg');
+  background-position: top 500px left 0px, top 100px right 0px;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
 }
 
-.articles-block {
+.basic-systems-block {
   width: 100%;
   height: auto;
 }
@@ -157,6 +162,8 @@ body {
 
   &_companies {
 
+    margin-bottom: 40px;
+
     &_heading {
       display: block;
       font-family: 'ProximaNova-Black', sans-serif;
@@ -164,27 +171,61 @@ body {
       letter-spacing: 6px;
       color: $color-text;
       text-transform: uppercase;
-      margin-bottom: 40px;
       position: relative;
       z-index: 0;
       line-height: 1;
       text-align: center;
 
-      &::before {
-        content: '';
-        background-image: url('/img/bg graphics/companies-img.svg');
-        width: 329px;
-        height: 293px;
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      &-decoration {
+
+        @mixin heading-decoration($url, $width, $height) {
+          content: '';
+          background-image: url($url);
+          width: $width;
+          height: $height;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &_true {
+
+          &::before {
+            @include heading-decoration(
+              $url: '/img/bg graphics/companies-img.svg',
+              $width: 329px,
+              $height: 293px
+            );
+          }
+        }
+
+        &_basic {
+
+          &::before {
+            @include heading-decoration(
+              $url: '/img/bg graphics/articles-bottom.svg',
+              $width: 534px,
+              $height: 344px
+            );
+          }
+        }
       }
+    }
+
+    &_subtitle {
+      font-family: 'ProximaNova-Regular', sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-top: 16px;
+      position: relative;
+      z-index: 1;
     }
   }
 }
-
 /* ============================ Controls ========================== */
 
 .button {
@@ -218,8 +259,36 @@ body {
   grid-gap: 40px;
   max-width: 1244px;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 
   &_item {
-    background: #f0f0f0;
+    background: $color-bg;
+    box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
+    border-radius: 14px;
+    height: 421px;
+
+    &_logo img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &_text-block {
+      max-width: 308px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &_title {
+      @include fontH3();
+      font-weight: bold;
+    }
+
+    &_text {
+      @include fontParagraph();
+    }
   }
 }
