@@ -1,27 +1,27 @@
 /* ============================ Fonts ========================== */
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url("../fonts/proximanova-light.otf");
+  src: url("../../fonts/proximanova-light.otf");
   font-weight: 100;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("../fonts/proximanova-regular.otf");
+  src: url("../../fonts/proximanova-regular.otf");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("../fonts/proximanova-bold.otf");
+  src: url("../../fonts/proximanova-bold.otf");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Black';
-  src: url("../fonts/proximanova-black.otf");
+  src: url("../../fonts/proximanova-black.otf");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Extrabold';
-  src: url("../fonts/proximanova-extrabold.otf");
+  src: url("../../fonts/proximanova-extrabold.otf");
   font-weight: 800;
   font-style: normal; }
 /* ============================ Common ========================== */
