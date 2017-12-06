@@ -1,55 +1,212 @@
-/*
-Error: File to import not found or unreadable: ../base_templates/fonts.scss.
-       Load paths:
-         /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/style
-         /Applications/Koala.app/Contents/Resources/app.nw
-         /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/node_modules
-         /Applications/Koala.app/Contents/Resources/app.nw/node_modules
-        on line 1 of /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/style/style.scss
+/* ============================ Fonts ========================== */
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/proximanova-light.otf");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/proximanova-regular.otf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/proximanova-bold.otf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url("../fonts/proximanova-black.otf");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Extrabold';
+  src: url("../fonts/proximanova-extrabold.otf");
+  font-weight: 800;
+  font-style: normal; }
+/* ============================ Common ========================== */
+* {
+  margin: 0;
+  padding: 0; }
 
-1: @import "../base_templates/fonts.scss";
-2: 
-3: @import "../node_modules/@paradigm/themes/base.scss";
-4: 
-5: @import "mixins/mixins.scss";
-6: 
+body {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  color: #333333;
+  font-size: 15px;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  padding: 20px; }
 
-Backtrace:
-/Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/style/style.scss:1
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../base_templates/fonts.scss.\A        Load paths:\A          /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/style\A          /Applications/Koala.app/Contents/Resources/app.nw\A          /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/node_modules\A          /Applications/Koala.app/Contents/Resources/app.nw/node_modules\A         on line 1 of /Users/sundiev/Cloud (Home)/Cloud Mail.Ru/Work/DS Club site/style/style.scss\A \A 1: @import \"../base_templates/fonts.scss\";\A 2: \A 3: @import \"../node_modules/@paradigm/themes/base.scss\";\A 4: \A 5: @import \"mixins/mixins.scss\";\A 6: "; }
+.content-block {
+  background: #fafafa;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%; }
+
+/* ============================ Containers ========================== */
+.hero-block {
+  width: 100%;
+  height: 910px;
+  background-image: url("/img/bg-graphics/top-left.svg"), url("/img/bg-graphics/top-right.svg");
+  background-position: top 0px left 0px, top 100px right 0px;
+  background-repeat: no-repeat; }
+
+.true-systems-block {
+  width: 100%;
+  height: auto;
+  background-image: url("/img/bg-graphics/articles-left.svg"), url("/img/bg-graphics/articles-right.svg");
+  background-position: top 500px left 0px, top 100px right 0px;
+  background-repeat: no-repeat;
+  margin-bottom: 80px; }
+
+.basic-systems-block {
+  width: 100%;
+  height: auto; }
+
+.footer-block {
+  width: 100%;
+  height: auto; }
+
+/* ============================ Graphics ========================== */
+.graphics {
+  display: inline-block;
+  z-index: 1;
+  pointer-events: none; }
+
+/* ============================ Titles ========================== */
+.titles_hero {
+  margin-left: 140px;
+  padding-top: 200px; }
+  .titles_hero_heading {
+    letter-spacing: 6px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+    line-height: .8; }
+    .titles_hero_heading::before {
+      content: '';
+      background-image: url("/img/bg-graphics/hero-img.svg");
+      width: 278px;
+      height: 266px;
+      position: absolute;
+      z-index: 0;
+      top: -159px;
+      left: -53px; }
+    .titles_hero_heading_1 {
+      display: block;
+      font-family: 'ProximaNova-Black', sans-serif;
+      font-size: 88px;
+      z-index: 1;
+      position: relative; }
+    .titles_hero_heading_2 {
+      display: block;
+      font-family: 'ProximaNova-Light', sans-serif;
+      font-size: 88px;
+      font-weight: 100;
+      z-index: 1;
+      position: relative; }
+  .titles_hero_text {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    width: 680px;
+    margin-bottom: 36px; }
+.titles_companies {
+  margin-bottom: 40px; }
+  .titles_companies_heading {
+    display: block;
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-size: 60px;
+    letter-spacing: 6px;
+    color: #333333;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+    line-height: 1;
+    text-align: center; }
+    .titles_companies_heading-decoration_true::before {
+      content: '';
+      background-image: url("/img/bg-graphics/companies-img.svg");
+      width: 329px;
+      height: 293px;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .titles_companies_heading-decoration_basic::before {
+      content: '';
+      background-image: url("/img/bg-graphics/articles-bottom.svg");
+      width: 534px;
+      height: 344px;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .titles_companies_subtitle {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 16px;
+    position: relative;
+    z-index: 1; }
+
+/* ============================ Controls ========================== */
+.button {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100; }
+  .button_main {
+    background: #FFF63F;
+    border-radius: 28px;
+    border: none;
+    box-shadow: none;
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 56px;
+    color: #333333;
+    text-align: center;
+    padding: 0 40px; }
+    .button_main:hover {
+      background: #f5ec3c; }
+
+/* ============================ Cards ========================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  max-width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative; }
+  .cards_item {
+    background: #ffffff;
+    box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 14px;
+    height: 421px; }
+    .cards_item_logo img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      display: block; }
+    .cards_item_text-block {
+      max-width: 308px;
+      text-align: center;
+      display: block;
+      margin: 0 auto; }
+    .cards_item_title {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: normal;
+      margin-bottom: 12px;
+      font-weight: bold; }
+    .cards_item_text {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: normal;
+      margin-bottom: 8px; }
