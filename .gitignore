@@ -1,3 +1,5 @@
 node_modules
+**/*.html
 /npm-debug.log
 /.idea
+public_html

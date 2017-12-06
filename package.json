@@ -8,16 +8,18 @@
     "build": "gulp",
     "dev": "pug templates --out . --pretty --watch --hierarchy ",
     "server": "gulp serve-public",
-    "lint:templates": "pug-lint --config=.pug-lintrc ."
+    "lint:templates": "pug-lint --config=.pug-lintrc .",
+    "deploy": "gh-pages -d public_html"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.corp.mail.ru:UX/megablocks.git"
+    "url": "git@github.com:mailru/designsystemsclub.git"
   },
   "author": "Andrey Sundiev <a.sundiev@corp.mail.ru>",
   "license": "MIT",
   "devDependencies": {
     "@paradigm/themes": "^0.11.0",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
     "gulp-pug": "^3.3.0",
