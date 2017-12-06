@@ -1,25 +1,25 @@
 /* ============================ Fonts ========================== */
 @font-face {
   font-family: 'ProximaNova-Thin';
-  src: url("/fonts/proximaNova-thin.otf"); }
+  src: url("../fonts/proximaNova-thin.otf"); }
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url("/fonts/proximaNova-light.otf"); }
+  src: url("../fonts/proximaNova-light.otf"); }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("/fonts/proximaNova-regular.otf"); }
+  src: url("../fonts/proximaNova-regular.otf"); }
 @font-face {
   font-family: 'ProximaNova-Semibold';
-  src: url("/fonts/proximaNova-semibold.otf"); }
+  src: url("../fonts/proximaNova-semibold.otf"); }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("/fonts/proximaNova-bold.otf"); }
+  src: url("../fonts/proximaNova-bold.otf"); }
 @font-face {
   font-family: 'ProximaNova-Black';
-  src: url("/fonts/proximaNova-black.otf"); }
+  src: url("../fonts/proximaNova-black.otf"); }
 @font-face {
   font-family: 'ProximaNova-Extrabold';
-  src: url("/fonts/proximaNova-extrabold.otf"); }
+  src: url("../fonts/proximaNova-extrabold.otf"); }
 /* ============================ Common ========================== */
 * {
   margin: 0;

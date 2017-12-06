@@ -1,25 +1,25 @@
 /* ============================ Fonts ========================== */
 @font-face {
   font-family: 'ProximaNova-Thin';
-  src: url("/fonts/proximaNova-thin.otf"); }
+  src: url("../fonts/proximaNova-thin.otf"); }
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url("/fonts/proximaNova-light.otf"); }
+  src: url("../fonts/proximaNova-light.otf"); }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("/fonts/proximaNova-regular.otf"); }
+  src: url("../fonts/proximaNova-regular.otf"); }
 @font-face {
   font-family: 'ProximaNova-Semibold';
-  src: url("/fonts/proximaNova-semibold.otf"); }
+  src: url("../fonts/proximaNova-semibold.otf"); }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("/fonts/proximaNova-bold.otf"); }
+  src: url("../fonts/proximaNova-bold.otf"); }
 @font-face {
   font-family: 'ProximaNova-Black';
-  src: url("/fonts/proximaNova-black.otf"); }
+  src: url("../fonts/proximaNova-black.otf"); }
 @font-face {
   font-family: 'ProximaNova-Extrabold';
-  src: url("/fonts/proximaNova-extrabold.otf"); }
+  src: url("../fonts/proximaNova-extrabold.otf"); }
 /* ============================ Common ========================== */
 * {
   margin: 0;
@@ -42,14 +42,14 @@ body {
 .hero-block {
   width: 100%;
   height: 910px;
-  background-image: url("/img/bg graphics/top-left.svg"), url("/img/bg graphics/top-right.svg");
+  background-image: url("/img/bg-graphics/top-left.svg"), url("/img/bg-graphics/top-right.svg");
   background-position: top 0px left 0px, top 100px right 0px;
   background-repeat: no-repeat; }
 
 .true-systems-block {
   width: 100%;
   height: auto;
-  background-image: url("/img/bg graphics/articles-left.svg"), url("/img/bg graphics/articles-right.svg");
+  background-image: url("/img/bg-graphics/articles-left.svg"), url("/img/bg-graphics/articles-right.svg");
   background-position: top 500px left 0px, top 100px right 0px;
   background-repeat: no-repeat;
   margin-bottom: 80px; }
@@ -82,7 +82,7 @@ body {
     line-height: .8; }
     .titles_hero_heading::before {
       content: '';
-      background-image: url("/img/bg graphics/hero-img.svg");
+      background-image: url("/img/bg-graphics/hero-img.svg");
       width: 278px;
       height: 266px;
       position: absolute;
@@ -124,7 +124,7 @@ body {
     text-align: center; }
     .titles_companies_heading-decoration_true::before {
       content: '';
-      background-image: url("/img/bg graphics/companies-img.svg");
+      background-image: url("/img/bg-graphics/companies-img.svg");
       width: 329px;
       height: 293px;
       position: absolute;
@@ -134,7 +134,7 @@ body {
       transform: translate(-50%, -50%); }
     .titles_companies_heading-decoration_basic::before {
       content: '';
-      background-image: url("/img/bg graphics/articles-bottom.svg");
+      background-image: url("/img/bg-graphics/articles-bottom.svg");
       width: 534px;
       height: 344px;
       position: absolute;
