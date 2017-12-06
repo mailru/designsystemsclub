@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324" height="510" viewBox="0 0 324 510">
+  <defs>
+    <rect id="top-right-a" width="328" height="519"/>
+    <linearGradient id="top-right-c" x1="50%" x2="50%" y1="130.652%" y2="0%">
+      <stop offset="0%" stop-color="#CD9CF2"/>
+      <stop offset="100%" stop-color="#F6F3FF"/>
+    </linearGradient>
+    <linearGradient id="top-right-d" x1="30.07%" x2="94.239%" y1="3.983%" y2="94.698%">
+      <stop offset="0%" stop-color="#CD9CF2"/>
+      <stop offset="100%" stop-color="#F6F3FF"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-4 -2)">
+    <mask id="top-right-b" fill="#fff">
+      <use xlink:href="#top-right-a"/>
+    </mask>
+    <g mask="url(#top-right-b)">
+      <g transform="translate(36 34)">
+        <circle cx="223" cy="223" r="138" fill="url(#top-right-c)"/>
+        <circle cx="223" cy="223" r="188" stroke="url(#top-right-d)" stroke-width="2"/>
+        <circle cx="223" cy="223" r="239" stroke="url(#top-right-d)" stroke-width="32" opacity=".32"/>
+      </g>
+    </g>
+  </g>
+</svg>

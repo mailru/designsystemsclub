@@ -1,0 +1,6 @@
+{
+    "excludeFiles": [
+        "node_modules/**"
+    ],
+    "validateIndentation": 2
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ds-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "dev": "pug templates --out . --pretty --watch --hierarchy ",
+    "server": "gulp serve-public",
+    "lint:templates": "pug-lint --config=.pug-lintrc ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.corp.mail.ru:UX/megablocks.git"
+  },
+  "author": "Andrey Sundiev <a.sundiev@corp.mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "@paradigm/themes": "^0.11.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-serve": "^1.4.0",
+    "jstransformer-markdown-it": "^2.0.0",
+    "pug-lint": "^2.4.0",
+    "yargs": "^8.0.2"
+  }
+}
