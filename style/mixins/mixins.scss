@@ -1,0 +1,3 @@
+@mixin standardHover($accent) {
+    background: mix($color-true-black, $accent, 4%);
+}
