@@ -52,11 +52,34 @@ body {
 .basic-systems-block {
   width: 100%;
   height: auto;
+  margin-bottom: 100px;
 }
 
 .footer-block {
   width: 100%;
-  height: auto;
+  height: 340px;
+  background-image: url('/img/bg-graphics/footer-img.svg');
+  background-position: bottom 0px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+
+  &_text {
+    @include fontH3();
+    color: $color-text;
+    letter-spacing: 1px;
+
+    & a {
+      font-weight: 600;
+      text-decoration: none;
+      color: $color-link;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 /* ============================ Graphics ========================== */
@@ -245,6 +268,7 @@ body {
       text-align: center;
       display: block;
       margin: 0 auto;
+      margin-bottom: 36px;
     }
 
     &_title {
@@ -254,6 +278,43 @@ body {
 
     &_text {
       @include fontParagraph();
+    }
+
+    &_tags-block {
+      max-width: 308px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_tag {
+      background: $color-bg-secondary;
+      border-radius: $size-border-radius;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      line-height: 28px;
+      padding: 0 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 16px;
+
+      & a {
+        text-decoration: none;
+        color: $color-text;
+      }
+
+      &:hover {
+        @include standardHover($color-bg-secondary);
+      }
+
+      & + & {
+        margin-left: 16px;
+      }
     }
   }
 }
