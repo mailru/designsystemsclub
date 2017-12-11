@@ -1,27 +1,27 @@
 /* ============================ Fonts ========================== */
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url("../../fonts/proximanova-light.otf");
+  src: url("https://github.com/mailru/designsystemsclub/blob/master/fonts/proximanova-light.otf");
   font-weight: 100;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url("../../fonts/proximanova-regular.otf");
+  src: url("https://github.com/mailru/designsystemsclub/blob/master/fonts/proximanova-reg.otf");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url("../../fonts/proximanova-bold.otf");
+  src: url("https://github.com/mailru/designsystemsclub/blob/master/fonts/proximanova-bold.otf");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Black';
-  src: url("../../fonts/proximanova-black.otf");
+  src: url("https://github.com/mailru/designsystemsclub/blob/master/fonts/proximanova-black.otf");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'ProximaNova-Extrabold';
-  src: url("../../fonts/proximanova-extrabold.otf");
+  src: url("https://github.com/mailru/designsystemsclub/blob/master/fonts/proximanova-xbold.otf");
   font-weight: 800;
   font-style: normal; }
 /* ============================ Common ========================== */
@@ -35,6 +35,9 @@ body {
   font-size: 15px;
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
   padding: 20px; }
+  @media (max-width: 768px) {
+    body {
+      padding: 12px; } }
 
 .content-block {
   background: #fafafa;
@@ -46,14 +49,28 @@ body {
 .hero-block {
   width: 100%;
   height: 910px;
-  background-image: url("/img/bg-graphics/top-left.svg"), url("/img/bg-graphics/top-right.svg");
+  background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/top-left.svg"), url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/top-right.svg");
   background-position: top 0px left 0px, top 100px right 0px;
   background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .hero-block {
+      height: 720px; } }
+  @media (max-width: 640px) {
+    .hero-block {
+      background-size: 100%, 50%; } }
+  @media (max-width: 480px) {
+    .hero-block {
+      height: 660px;
+      background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/top-left.svg");
+      background-position: top 0px left 0px; } }
+  @media (max-width: 480px) {
+    .hero-block {
+      height: 600px; } }
 
 .true-systems-block {
   width: 100%;
   height: auto;
-  background-image: url("/img/bg-graphics/articles-left.svg"), url("/img/bg-graphics/articles-right.svg");
+  background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/articles-left.svg"), url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/articles-right.svg");
   background-position: top 500px left 0px, top 100px right 0px;
   background-repeat: no-repeat;
   margin-bottom: 80px; }
@@ -66,7 +83,7 @@ body {
 .footer-block {
   width: 100%;
   height: 340px;
-  background-image: url("/img/bg-graphics/footer-img.svg");
+  background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/footer-img.svg");
   background-position: bottom 0px;
   background-repeat: no-repeat;
   position: relative;
@@ -96,6 +113,18 @@ body {
 .titles_hero {
   margin-left: 140px;
   padding-top: 200px; }
+  @media (max-width: 892px) {
+    .titles_hero {
+      margin-left: 80px; } }
+  @media (max-width: 832px) {
+    .titles_hero {
+      margin-left: 40px;
+      padding-top: 120px; } }
+  @media (max-width: 483px) {
+    .titles_hero {
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-top: 80px; } }
   .titles_hero_heading {
     letter-spacing: 6px;
     color: #333333;
@@ -104,21 +133,38 @@ body {
     position: relative;
     z-index: 1;
     line-height: .8; }
+    @media (max-width: 421px) {
+      .titles_hero_heading {
+        margin-bottom: 24px; } }
     .titles_hero_heading::before {
       content: '';
-      background-image: url("/img/bg-graphics/hero-img.svg");
+      background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/hero-img.svg");
       width: 278px;
       height: 266px;
       position: absolute;
       z-index: 0;
       top: -159px;
       left: -53px; }
+      @media (max-width: 832px) {
+        .titles_hero_heading::before {
+          top: -100px;
+          left: -58px;
+          transform: scale(0.7); } }
     .titles_hero_heading_1 {
       display: block;
       font-family: 'ProximaNova-Black', sans-serif;
       font-size: 88px;
       z-index: 1;
       position: relative; }
+      @media (max-width: 560px) {
+        .titles_hero_heading_1 {
+          font-size: 72px; } }
+      @media (max-width: 444px) {
+        .titles_hero_heading_1 {
+          font-size: 60px; } }
+      @media (max-width: 359px) {
+        .titles_hero_heading_1 {
+          font-size: 48px; } }
     .titles_hero_heading_2 {
       display: block;
       font-family: 'ProximaNova-Light', sans-serif;
@@ -126,6 +172,15 @@ body {
       font-weight: 100;
       z-index: 1;
       position: relative; }
+      @media (max-width: 560px) {
+        .titles_hero_heading_2 {
+          font-size: 72px; } }
+      @media (max-width: 444px) {
+        .titles_hero_heading_2 {
+          font-size: 60px; } }
+      @media (max-width: 359px) {
+        .titles_hero_heading_2 {
+          font-size: 48px; } }
   .titles_hero_text {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 24px;
@@ -133,8 +188,19 @@ body {
     letter-spacing: 2px;
     width: 680px;
     margin-bottom: 36px; }
+    @media (max-width: 832px) {
+      .titles_hero_text {
+        width: auto; } }
+    @media (max-width: 560px) {
+      .titles_hero_text {
+        font-size: 20px;
+        line-height: 28px; } }
+    @media (max-width: 421px) {
+      .titles_hero_text {
+        font-size: 17px;
+        line-height: 24px; } }
 .titles_companies {
-  margin-bottom: 40px; }
+  margin: 40px; }
   .titles_companies_heading {
     display: block;
     font-family: 'ProximaNova-Black', sans-serif;
@@ -146,9 +212,18 @@ body {
     z-index: 0;
     line-height: 1;
     text-align: center; }
+    @media (max-width: 712px) {
+      .titles_companies_heading {
+        font-size: 48px; } }
+    @media (max-width: 608px) {
+      .titles_companies_heading {
+        font-size: 40px; } }
+    @media (max-width: 530px) {
+      .titles_companies_heading {
+        font-size: 32px; } }
     .titles_companies_heading-decoration_true::before {
       content: '';
-      background-image: url("/img/bg-graphics/companies-img.svg");
+      background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/companies-img.svg");
       width: 329px;
       height: 293px;
       position: absolute;
@@ -158,7 +233,7 @@ body {
       transform: translate(-50%, -50%); }
     .titles_companies_heading-decoration_basic::before {
       content: '';
-      background-image: url("/img/bg-graphics/articles-bottom.svg");
+      background-image: url("https://github.com/mailru/designsystemsclub/blob/master/img/bg-graphics/articles-bottom.svg");
       width: 534px;
       height: 344px;
       position: absolute;
@@ -175,6 +250,10 @@ body {
     margin-top: 16px;
     position: relative;
     z-index: 1; }
+    @media (max-width: 560px) {
+      .titles_companies_subtitle {
+        font-size: 20px;
+        line-height: 28px; } }
 
 /* ============================ Controls ========================== */
 .button {
@@ -192,6 +271,9 @@ body {
     color: #333333;
     text-align: center;
     padding: 0 40px; }
+    @media (max-width: 483px) {
+      .button_main {
+        width: 100%; } }
     .button_main:hover {
       background: #f5ec3c; }
 
@@ -204,11 +286,30 @@ body {
   margin: 0 auto;
   z-index: 1;
   position: relative; }
+  @media (max-width: 1364px) {
+    .cards {
+      margin: 0 40px; } }
+  @media (max-width: 1207px) {
+    .cards {
+      grid-gap: 20px; } }
+  @media (max-width: 1167px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 816px;
+      margin: 0 auto; } }
+  @media (max-width: 936px) {
+    .cards {
+      margin: 0 40px; } }
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 388px;
+      margin: 0 auto; } }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
     border-radius: 14px;
-    height: 421px; }
+    padding: 0 20px 40px 20px; }
     .cards_item_logo img {
       width: 160px;
       height: 160px;
