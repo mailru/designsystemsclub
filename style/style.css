@@ -84,7 +84,7 @@ body {
   width: 100%;
   height: 340px;
   background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/footer-img.svg");
-  background-position: bottom 0px;
+  background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
   margin: 0 auto;
@@ -95,7 +95,8 @@ body {
     font-weight: normal;
     margin-bottom: 12px;
     color: #333333;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin: 0 20px; }
     .footer-block_text a {
       font-weight: 600;
       text-decoration: none;
@@ -201,10 +202,14 @@ body {
         line-height: 24px; } }
 .titles_companies {
   margin: 40px; }
+  @media (max-width: 400px) {
+    .titles_companies {
+      margin: 40px 20px; } }
   .titles_companies_heading {
     display: block;
     font-family: 'ProximaNova-Black', sans-serif;
     font-size: 60px;
+    line-height: 80px;
     letter-spacing: 6px;
     color: #333333;
     text-transform: uppercase;
@@ -214,13 +219,28 @@ body {
     text-align: center; }
     @media (max-width: 712px) {
       .titles_companies_heading {
-        font-size: 48px; } }
+        font-size: 48px;
+        line-height: 56px; } }
     @media (max-width: 608px) {
       .titles_companies_heading {
-        font-size: 40px; } }
+        font-size: 40px;
+        line-height: 48px; } }
     @media (max-width: 530px) {
       .titles_companies_heading {
-        font-size: 32px; } }
+        font-size: 32px;
+        line-height: 40px; } }
+    @media (max-width: 430px) {
+      .titles_companies_heading {
+        font-size: 28px;
+        line-height: 32px; } }
+    @media (max-width: 400px) {
+      .titles_companies_heading {
+        font-size: 24px;
+        line-height: 32px; } }
+    @media (max-width: 360px) {
+      .titles_companies_heading {
+        font-size: 20px;
+        line-height: 28px; } }
     .titles_companies_heading-decoration_true::before {
       content: '';
       background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg");
@@ -254,6 +274,10 @@ body {
       .titles_companies_subtitle {
         font-size: 20px;
         line-height: 28px; } }
+    @media (max-width: 400px) {
+      .titles_companies_subtitle {
+        font-size: 17px;
+        line-height: 24px; } }
 
 /* ============================ Controls ========================== */
 .button {
@@ -305,6 +329,9 @@ body {
       grid-template-columns: repeat(1, 1fr);
       max-width: 388px;
       margin: 0 auto; } }
+  @media (max-width: 452px) {
+    .cards {
+      margin: 0 20px; } }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);

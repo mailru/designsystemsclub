@@ -81,7 +81,7 @@ body {
   width: 100%;
   height: 340px;
   background-image: url('https://mailru.github.io/designsystemsclub/img/bg-graphics/footer-img.svg');
-  background-position: bottom 0px;
+  background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
   margin: 0 auto;
@@ -91,6 +91,7 @@ body {
     @include fontH3();
     color: $color-text;
     letter-spacing: 1px;
+    margin: 0 20px;
 
     & a {
       font-weight: 600;
@@ -237,10 +238,15 @@ body {
 
     margin: 40px;
 
+    @media (max-width: 400px) {
+      margin: 40px 20px;
+    }
+
     &_heading {
       display: block;
       font-family: 'ProximaNova-Black', sans-serif;
       font-size: 60px;
+      line-height: 80px;
       letter-spacing: 6px;
       color: $color-text;
       text-transform: uppercase;
@@ -251,14 +257,32 @@ body {
 
       @media (max-width: 712px) {
         font-size: 48px;
+        line-height: 56px;
       }
 
       @media (max-width: 608px) {
         font-size: 40px;
+        line-height: 48px;
       }
 
       @media (max-width: 530px) {
         font-size: 32px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 430px) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 20px;
+        line-height: 28px;
       }
 
       &-decoration {
@@ -312,6 +336,11 @@ body {
       @media (max-width: 560px) {
         font-size: 20px;
         line-height: 28px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 17px;
+        line-height: 24px;
       }
     }
   }
@@ -378,6 +407,10 @@ body {
     grid-template-columns: repeat(1, 1fr);
     max-width: 388px;
     margin: 0 auto;
+  }
+
+  @media (max-width: 452px) {
+    margin: 0 20px;
   }
 
   &_item {
