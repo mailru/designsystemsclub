@@ -405,7 +405,8 @@ body {
 
     &_title {
       @include fontH3();
-      font-weight: bold;
+      font-weight: 600;
+      font-family: 'ProximaNova-Bold';
     }
 
     &_text {
@@ -426,7 +427,8 @@ body {
     &_tag {
       background: $color-bg-secondary;
       border-radius: $size-border-radius;
-      font-weight: 800;
+      font-weight: 600;
+      font-family: 'ProximaNova-Bold';
       font-size: 13px;
       letter-spacing: 0.5px;
       line-height: 28px;

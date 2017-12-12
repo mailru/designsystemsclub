@@ -326,7 +326,8 @@ body {
       line-height: 24px;
       font-weight: normal;
       margin-bottom: 12px;
-      font-weight: bold; }
+      font-weight: 600;
+      font-family: 'ProximaNova-Bold'; }
     .cards_item_text {
       font-size: 15px;
       line-height: 20px;
@@ -344,7 +345,8 @@ body {
     .cards_item_tag {
       background: #f0f0f0;
       border-radius: 2px;
-      font-weight: 800;
+      font-weight: 600;
+      font-family: 'ProximaNova-Bold';
       font-size: 13px;
       letter-spacing: 0.5px;
       line-height: 28px;
