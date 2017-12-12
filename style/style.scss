@@ -30,6 +30,12 @@ body {
   border-radius: 12px;
   width: 100%;
   height: 100%;
+
+  &_company {
+    background-image: url('https://mailru.github.io/designsystemsclub/img/bg-graphics/top-left.svg');
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
+  }
 }
 
 /* ============================ Containers ========================== */
@@ -77,6 +83,70 @@ body {
   margin-bottom: 100px;
 }
 
+.articles-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+
+  &_container {
+    max-width: 1244px;
+    min-height: 400px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    background: $color-bg;
+    box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
+    border-radius: 14px;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  &_item {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-bg-secondary;
+    }
+
+    &-wrapper {
+      padding: 16px;
+      box-shadow: 0 1px 0 0 rgba(0,0,0,.12);
+    }
+
+    &-header {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 600;
+      font-family: 'ProximaNova-Bold';
+      color: $color-text;
+    }
+
+    &-subtitle {
+      display: inline-block;
+      width: 100%;
+    }
+
+    &-author {
+      float: left;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 100;
+      font-family: 'ProximaNova-Light';
+      color: $color-text-secondary;
+    }
+
+    &-source {
+      float: right;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 100;
+      font-family: 'ProximaNova-Light';
+      color: $color-text-secondary;
+    }
+  }
+}
+
 .footer-block {
   width: 100%;
   height: 340px;
@@ -112,6 +182,16 @@ body {
   display: inline-block;
   z-index: 1;
   pointer-events: none;
+}
+
+.company-page_logo {
+
+    & img {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    display: block;
+    }
 }
 
 /* ============================ Titles ========================== */
@@ -320,6 +400,21 @@ body {
             );
           }
         }
+
+        &_articles {
+
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 0%);
+
+          &::before {
+            @include heading-decoration(
+              $url: 'https://mailru.github.io/designsystemsclub/img/bg-graphics/articles-bottom.svg',
+              $width: 534px,
+              $height: 344px
+            );
+          }
+        }
       }
     }
 
@@ -373,6 +468,7 @@ body {
     }
   }
 }
+
 
 /* ============================ Cards ========================== */
 
