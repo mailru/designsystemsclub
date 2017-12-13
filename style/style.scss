@@ -86,7 +86,7 @@ body {
 .articles-block {
   width: 100%;
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 
   &_container {
     max-width: 1244px;
@@ -415,6 +415,17 @@ body {
             );
           }
         }
+
+        &_presentations {
+
+          &::before {
+            @include heading-decoration(
+              $url: 'https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg',
+              $width: 329px,
+              $height: 293px
+            );
+          }
+        }
       }
     }
 
@@ -440,22 +451,24 @@ body {
     }
   }
 }
+
 /* ============================ Controls ========================== */
 
 .button {
   display: inline-block;
   cursor: pointer;
   z-index: 100;
+  border-radius: 28px;
+  border: none;
+  box-shadow: none;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 20px;
+  line-height: 60px;
+  color: $color-text;
+
 
   &_main {
     background: #FFF63F;
-    border-radius: 28px;
-    border: none;
-    box-shadow: none;
-    font-family: 'ProximaNova-Bold', sans-serif;
-    font-size: 20px;
-    line-height: 56px;
-    color: $color-text;
     text-align: center;
     padding: 0 40px;
 
@@ -465,6 +478,24 @@ body {
 
     &:hover {
       @include standardHover(#FFF63F);
+    }
+  }
+
+  &_back {
+    background: $color-bg;
+    box-shadow: 0 24px 60px 0 rgba(0,0,0,.12);
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+
+    &::before {
+      content: '';
+      background-image: url('https://mailru.github.io/designsystemsclub/img/icons/back.svg');
+      width: 18px;
+      height: 14px;
+      position: absolute;
+      margin-right: 16px;
     }
   }
 }
@@ -509,12 +540,24 @@ body {
     margin: 0 20px;
   }
 
+  & a {
+    text-decoration: none;
+  }
+
   &_item {
     background: $color-bg;
     box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
     border-radius: 14px;
     padding: 0 20px 40px 20px;
+    cursor: pointer;
 
+    &:hover {
+      cursor: pointer;
+      box-shadow: none;
+      transition-property: box-shadow;
+      transition-duration: 0.15s;
+      transition-timing-function: ease-out;
+    }
 
 
     &_logo img {
@@ -530,12 +573,14 @@ body {
       display: block;
       margin: 0 auto;
       margin-bottom: 36px;
+      color: $color-text;
     }
 
     &_title {
       @include fontH3();
       font-weight: 600;
       font-family: 'ProximaNova-Bold';
+      color: $color-text;
     }
 
     &_text {
@@ -555,6 +600,7 @@ body {
 
     &_tag {
       background: $color-bg-secondary;
+      color: $color-text;
       border-radius: $size-border-radius;
       font-weight: 600;
       font-family: 'ProximaNova-Bold';
@@ -563,17 +609,7 @@ body {
       line-height: 28px;
       padding: 0 12px;
       text-transform: uppercase;
-      cursor: pointer;
       margin-bottom: 16px;
-
-      & a {
-        text-decoration: none;
-        color: $color-text;
-      }
-
-      &:hover {
-        @include standardHover($color-bg-secondary);
-      }
 
       & + & {
         margin-left: 16px;
