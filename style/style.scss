@@ -25,6 +25,12 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  color: $color-text;
+  cursor: pointer;
+}
+
 .content-block {
   background: #fafafa;
   border-radius: 12px;
@@ -147,6 +153,12 @@ body {
   }
 }
 
+.tools-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
 .footer-block {
   width: 100%;
   height: 340px;
@@ -185,6 +197,9 @@ body {
 }
 
 .company-page_logo {
+
+    margin-top: -80px;
+    margin-bottom: 80px;
 
     & img {
     width: 320px;
@@ -456,6 +471,7 @@ body {
 
 .button {
   display: inline-block;
+  position: relative;
   cursor: pointer;
   z-index: 100;
   border-radius: 28px;
@@ -488,14 +504,26 @@ body {
     font-size: 20px;
     font-weight: 600;
     line-height: 60px;
+    margin: 20px;
+    cursor: pointer;
 
     &::before {
       content: '';
       background-image: url('https://mailru.github.io/designsystemsclub/img/icons/back.svg');
       width: 18px;
       height: 14px;
-      position: absolute;
+      position: relative;
+      display: inline-block;
       margin-right: 16px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: $color-bg-secondary;
+      box-shadow: none;
+      transition-property: box-shadow, background;
+      transition-duration: 0.15s;
+      transition-timing-function: ease-out;
     }
   }
 }
@@ -511,6 +539,11 @@ body {
   margin: 0 auto;
   z-index: 1;
   position: relative;
+
+  &_tools {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 816px;
+  }
 
   @media (max-width: 1364px) {
     margin: 0 40px;
