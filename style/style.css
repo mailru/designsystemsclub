@@ -87,7 +87,7 @@ body {
 .articles-block {
   width: 100%;
   height: auto;
-  margin-bottom: 60px; }
+  margin-bottom: 100px; }
   .articles-block_container {
     max-width: 1244px;
     min-height: 400px;
@@ -332,6 +332,16 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+    .titles_companies_heading-decoration_presentations::before {
+      content: '';
+      background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg");
+      width: 329px;
+      height: 293px;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .titles_companies_subtitle {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 24px;
@@ -354,16 +364,16 @@ body {
 .button {
   display: inline-block;
   cursor: pointer;
-  z-index: 100; }
+  z-index: 100;
+  border-radius: 28px;
+  border: none;
+  box-shadow: none;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 20px;
+  line-height: 60px;
+  color: #333333; }
   .button_main {
     background: #FFF63F;
-    border-radius: 28px;
-    border: none;
-    box-shadow: none;
-    font-family: 'ProximaNova-Bold', sans-serif;
-    font-size: 20px;
-    line-height: 56px;
-    color: #333333;
     text-align: center;
     padding: 0 40px; }
     @media (max-width: 483px) {
@@ -371,6 +381,20 @@ body {
         width: 100%; } }
     .button_main:hover {
       background: #f5ec3c; }
+  .button_back {
+    background: #ffffff;
+    box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px; }
+    .button_back::before {
+      content: '';
+      background-image: url("https://mailru.github.io/designsystemsclub/img/icons/back.svg");
+      width: 18px;
+      height: 14px;
+      position: absolute;
+      margin-right: 16px; }
 
 /* ============================ Cards ========================== */
 .cards {
@@ -403,11 +427,20 @@ body {
   @media (max-width: 452px) {
     .cards {
       margin: 0 20px; } }
+  .cards a {
+    text-decoration: none; }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
     border-radius: 14px;
-    padding: 0 20px 40px 20px; }
+    padding: 0 20px 40px 20px;
+    cursor: pointer; }
+    .cards_item:hover {
+      cursor: pointer;
+      box-shadow: none;
+      transition-property: box-shadow;
+      transition-duration: 0.15s;
+      transition-timing-function: ease-out; }
     .cards_item_logo img {
       width: 160px;
       height: 160px;
@@ -418,14 +451,16 @@ body {
       text-align: center;
       display: block;
       margin: 0 auto;
-      margin-bottom: 36px; }
+      margin-bottom: 36px;
+      color: #333333; }
     .cards_item_title {
       font-size: 17px;
       line-height: 24px;
       font-weight: normal;
       margin-bottom: 12px;
       font-weight: 600;
-      font-family: 'ProximaNova-Bold'; }
+      font-family: 'ProximaNova-Bold';
+      color: #333333; }
     .cards_item_text {
       font-size: 15px;
       line-height: 20px;
@@ -442,6 +477,7 @@ body {
       justify-content: center; }
     .cards_item_tag {
       background: #f0f0f0;
+      color: #333333;
       border-radius: 2px;
       font-weight: 600;
       font-family: 'ProximaNova-Bold';
@@ -450,12 +486,6 @@ body {
       line-height: 28px;
       padding: 0 12px;
       text-transform: uppercase;
-      cursor: pointer;
       margin-bottom: 16px; }
-      .cards_item_tag a {
-        text-decoration: none;
-        color: #333333; }
-      .cards_item_tag:hover {
-        background: #e6e6e6; }
       .cards_item_tag + .cards_item_tag {
         margin-left: 16px; }
