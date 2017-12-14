@@ -1,0 +1,41 @@
+extends ../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="index.html").button.button_back Вернуться
+    .company-page_logo
+      img(src="https://mailru.github.io/designsystemsclub/img/logos/gov.svg")
+    .tags-block
+      a(href="http://gov.design/" target="_blank").tags-block_tag
+          | сайт
+      a(href="https://github.com/govdesign" target="_blank").tags-block_tag
+          | репозиторий
+      a(href="http://blog.gov.design/" target="_blank").tags-block_tag
+          | блог
+      a(href="#presentations").tags-block_tag
+          | презентации
+
+
+    .articles-block
+      .titles.titles_companies
+        h2#presentations.titles_companies_heading.titles_companies_heading-decoration_presentations
+          | Презентации
+
+      .articles-block_container
+        a(href="https://www.facebook.com/aic.ru/videos/1248753351897076/" target="_blank").articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Дизайн-система России
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Дмитрий Егошин
+              .articles-block_item-source 
+                | facebook.com
+
+
+
+    .footer-block
+      .footer-block_text
+        | Mail.Ru Design #[a(href="#") @mailrudesign]
+        br
+        | Андрей Сундиев #[a(href="#")  @asundiev] и Юрий Ветров #[a(href="#") @jvetrau]  

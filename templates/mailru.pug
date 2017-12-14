@@ -5,10 +5,17 @@ block body
     a(href="index.html").button.button_back Вернуться
     .company-page_logo
       img(src="https://mailru.github.io/designsystemsclub/img/logos/MailRu.svg")
+    .tags-block
+      a(href="http://design.mail.ru/paradigm/" target="_blank").tags-block_tag
+          | сайт
+      a(href="#articles").tags-block_tag
+          | статьи
+      a(href="#presentations").tags-block_tag
+          | презентации
 
     .articles-block
       .titles.titles_companies
-        h2.titles_companies_heading.titles_companies_heading-decoration_articles
+        h2#articles.titles_companies_heading.titles_companies_heading-decoration_articles
           | Статьи
 
       .articles-block_container
@@ -116,7 +123,7 @@ block body
 
     .articles-block
       .titles.titles_companies
-        h2.titles_companies_heading.titles_companies_heading-decoration_presentations
+        h2#presentations.titles_companies_heading.titles_companies_heading-decoration_presentations
           | Презентации
 
       .articles-block_container

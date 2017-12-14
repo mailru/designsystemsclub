@@ -1,0 +1,39 @@
+extends ../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="index.html").button.button_back Вернуться
+    .company-page_logo
+      img(src="https://mailru.github.io/designsystemsclub/img/logos/Rambler.svg")
+    .tags-block
+      a(href="https://brand.rambler.ru/" target="_blank").tags-block_tag
+          | сайт
+      a(href="https://rambler-digital-solutions.github.io/rambler-ui/" target="_blank").tags-block_tag
+          | репозиторий
+      a(href="#articles").tags-block_tag
+          | статьи
+
+
+    .articles-block
+      .titles.titles_companies
+        h2#articles.titles_companies_heading.titles_companies_heading-decoration_articles
+          | Статьи
+
+      .articles-block_container
+
+        a(href="https://vc.ru/28213-razrabotka-edinoy-dizayn-sistemy-opyt-ramblera" target="_blank").articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Разработка единой дизайн-системы — опыт «Рамблера»
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Юлия Зоркина
+              .articles-block_item-source 
+                | vc.ru
+
+
+    .footer-block
+      .footer-block_text
+        | Mail.Ru Design #[a(href="#") @mailrudesign]
+        br
+        | Андрей Сундиев #[a(href="#")  @asundiev] и Юрий Ветров #[a(href="#") @jvetrau]  

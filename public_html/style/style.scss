@@ -159,6 +159,43 @@ a {
   margin-bottom: 80px;
 }
 
+.tags-block {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  margin-bottom: 80px;
+
+  &_tag {
+    background: $color-bg-secondary;
+    color: $color-text;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'ProximaNova-Bold';
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &:hover {
+      @include standardHover($color-bg-secondary);
+    }
+
+    & + & {
+      margin-left: 16px;
+    }
+  }
+}
+
 .footer-block {
   width: 100%;
   height: 340px;
@@ -198,8 +235,7 @@ a {
 
 .company-page_logo {
 
-    margin-top: -80px;
-    margin-bottom: 80px;
+    margin-top: -100px;
 
     & img {
     width: 320px;
@@ -428,6 +464,7 @@ a {
               $width: 534px,
               $height: 344px
             );
+            top: 200%;
           }
         }
 
@@ -439,6 +476,19 @@ a {
               $width: 329px,
               $height: 293px
             );
+            top: 170%;
+          }
+        }
+
+        &_tools {
+
+          &::before {
+            @include heading-decoration(
+              $url: 'https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg',
+              $width: 329px,
+              $height: 293px
+            );
+            top: 170%;
           }
         }
       }
@@ -527,7 +577,6 @@ a {
     }
   }
 }
-
 
 /* ============================ Cards ========================== */
 
@@ -618,35 +667,6 @@ a {
 
     &_text {
       @include fontParagraph();
-    }
-
-    &_tags-block {
-      max-width: 308px;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      margin: 0 auto;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &_tag {
-      background: $color-bg-secondary;
-      color: $color-text;
-      border-radius: $size-border-radius;
-      font-weight: 600;
-      font-family: 'ProximaNova-Bold';
-      font-size: 13px;
-      letter-spacing: 0.5px;
-      line-height: 28px;
-      padding: 0 12px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-
-      & + & {
-        margin-left: 16px;
-      }
     }
   }
 }
