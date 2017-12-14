@@ -153,6 +153,9 @@ a {
   z-index: 1;
   margin-top: -40px;
   margin-bottom: 80px; }
+  .tags-block_inCard {
+    margin-top: 0px;
+    margin-bottom: 0px; }
   .tags-block_tag {
     background: #f0f0f0;
     color: #333333;
@@ -166,6 +169,12 @@ a {
     text-transform: uppercase;
     margin-bottom: 16px;
     cursor: pointer; }
+    .tags-block_tag-secondary {
+      background: none;
+      color: #999999; }
+      .tags-block_tag-secondary:hover {
+        background: whitesmoke;
+        color: #333333; }
     .tags-block_tag:hover {
       background: #e6e6e6; }
     .tags-block_tag + .tags-block_tag {
@@ -496,20 +505,12 @@ a {
   @media (max-width: 452px) {
     .cards {
       margin: 0 20px; } }
-  .cards a {
-    text-decoration: none; }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
     border-radius: 14px;
     padding: 0 20px 40px 20px;
     cursor: pointer; }
-    .cards_item:hover {
-      cursor: pointer;
-      box-shadow: none;
-      transition-property: box-shadow;
-      transition-duration: 0.15s;
-      transition-timing-function: ease-out; }
     .cards_item_logo img {
       width: 160px;
       height: 160px;

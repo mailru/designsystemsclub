@@ -172,6 +172,11 @@ a {
   margin-top: -40px;
   margin-bottom: 80px;
 
+  &_inCard {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   &_tag {
     background: $color-bg-secondary;
     color: $color-text;
@@ -185,6 +190,16 @@ a {
     text-transform: uppercase;
     margin-bottom: 16px;
     cursor: pointer;
+
+    &-secondary {
+      background: none;
+      color: $color-text-secondary;
+
+      &:hover {
+        @include standardHover($color-bg);
+        color: $color-text;
+      }
+    }
 
     &:hover {
       @include standardHover($color-bg-secondary);
@@ -622,25 +637,12 @@ a {
     margin: 0 20px;
   }
 
-  & a {
-    text-decoration: none;
-  }
-
   &_item {
     background: $color-bg;
     box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
     border-radius: 14px;
     padding: 0 20px 40px 20px;
     cursor: pointer;
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: none;
-      transition-property: box-shadow;
-      transition-duration: 0.15s;
-      transition-timing-function: ease-out;
-    }
-
 
     &_logo img {
       width: 160px;
