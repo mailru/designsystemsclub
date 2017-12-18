@@ -1,0 +1,50 @@
+extends ../../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="../index.html").button.button_back Вернуться
+    .company-page_logo
+      img(src="https://mailru.github.io/designsystemsclub/img/logos/Tinkoff.svg")
+    .tags-block
+      a(href="#articles").tags-block_tag
+          | статьи
+
+
+    .articles-block
+      .titles.titles_companies
+        h2#articles.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_articles
+          | Статьи
+
+      .articles-block_container
+        a(href="https://habrahabr.ru/company/tinkoff/blog/339660/"  ).articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Создание Tinkoff Design System. UI Kit, версионирование и витрина компонентов
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Никита Прилепский
+              .articles-block_item-source 
+                | habrahabr.ru
+                
+        a(href="https://habrahabr.ru/company/tinkoff/blog/337922/"  ).articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Проблемы React UI Kit-а и единой дизайн-системы, о которых вы не знали
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Дарья Пушкарская
+              .articles-block_item-source 
+                | habrahabr.ru
+
+        a(href="https://habrahabr.ru/company/tinkoff/blog/326782/"  ).articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Создание Tinkoff Design System. Первые шаги
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Никита Прилепский
+              .articles-block_item-source 
+                | habrahabr.ru
+
+
+    include ../../base_templates/footer.pug  

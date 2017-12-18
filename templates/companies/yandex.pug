@@ -1,8 +1,8 @@
-extends ../base_templates/base
+extends ../../base_templates/base
 
 block body
   .content-block.content-block_company
-    a(href="index.html").button.button_back Вернуться
+    a(href="../index.html").button.button_back Вернуться
     .company-page_logo
       img(src="https://mailru.github.io/designsystemsclub/img/logos/Yandex.svg")
     .tags-block
@@ -14,13 +14,13 @@ block body
               
     .tools-block
       .titles.titles_companies
-        h2#tools.titles_companies_heading.titles_companies_heading-decoration_tools
+        h2#tools.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_tools
           | Инструменты
 
       .cards.cards_tools      
         a(href="mailru.html"  ).cards_item
           .cards_item_logo
-            img(src="/img/logos/Beast.svg")
+            img(src="https://mailru.github.io/designsystemsclub/img/logos/Beast.svg")
           .cards_item_text-block
             .cards_item_title
               | Beast
@@ -40,8 +40,4 @@ block body
 
 
 
-    .footer-block
-      .footer-block_text
-        | Mail.Ru Design #[a(href="#") @mailrudesign]
-        br
-        | Андрей Сундиев #[a(href="#")  @asundiev] и Юрий Ветров #[a(href="#") @jvetrau]  
+    include ../../base_templates/footer.pug

@@ -1,0 +1,33 @@
+extends ../../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="../index.html").button.button_back Вернуться
+    .company-page_logo
+      img(src="https://mailru.github.io/designsystemsclub/img/logos/Megafon.svg")
+    .tags-block
+      a(href="http://ui.megafon.ru/").tags-block_tag
+          | сайт
+      a(href="#articles").tags-block_tag
+          | статьи
+
+
+    .articles-block
+      .titles.titles_companies
+        h2#articles.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_articles
+          | Статьи
+
+      .articles-block_container
+        a(href="https://habrahabr.ru/company/acronis/blog/344454/"  ).articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | Дизайн-система МегаФона. Эпизод 1: Процессы и инструменты
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Надежда Терехова, Артём Володин, Станислав Петров
+              .articles-block_item-source 
+                | medium.com
+
+
+
+    include ../../base_templates/footer.pug  

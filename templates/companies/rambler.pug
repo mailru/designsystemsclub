@@ -1,8 +1,8 @@
-extends ../base_templates/base
+extends ../../base_templates/base
 
 block body
   .content-block.content-block_company
-    a(href="index.html").button.button_back Вернуться
+    a(href="../index.html").button.button_back Вернуться
     .company-page_logo
       img(src="https://mailru.github.io/designsystemsclub/img/logos/Rambler.svg")
     .tags-block
@@ -16,7 +16,7 @@ block body
 
     .articles-block
       .titles.titles_companies
-        h2#articles.titles_companies_heading.titles_companies_heading-decoration_articles
+        h2#articles.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_articles
           | Статьи
 
       .articles-block_container
@@ -32,8 +32,4 @@ block body
                 | vc.ru
 
 
-    .footer-block
-      .footer-block_text
-        | Mail.Ru Design #[a(href="#") @mailrudesign]
-        br
-        | Андрей Сундиев #[a(href="#")  @asundiev] и Юрий Ветров #[a(href="#") @jvetrau]  
+    include ../../base_templates/footer.pug  

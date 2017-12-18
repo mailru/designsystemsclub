@@ -104,6 +104,12 @@ a {
     border-radius: 14px;
     padding: 20px;
     padding-bottom: 40px; }
+    @media (max-width: 1404px) {
+      .articles-block_container {
+        margin: 0 40px; } }
+    @media (max-width: 800px) {
+      .articles-block_container {
+        margin: 0 20px; } }
   .articles-block_item {
     display: block;
     text-decoration: none; }
@@ -349,6 +355,18 @@ a {
       .titles_companies_heading {
         font-size: 20px;
         line-height: 28px; } }
+    @media (max-width: 608px) {
+      .titles_companies_heading_inside {
+        font-size: 48px;
+        line-height: 56px; } }
+    @media (max-width: 530px) {
+      .titles_companies_heading_inside {
+        font-size: 40px;
+        line-height: 48px; } }
+    @media (max-width: 430px) {
+      .titles_companies_heading_inside {
+        font-size: 32px;
+        line-height: 40px; } }
     .titles_companies_heading-decoration_true::before {
       content: '';
       background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg");
@@ -384,6 +402,13 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
         top: 200%; }
+        @media (max-width: 560px) {
+          .titles_companies_heading-decoration_articles::before {
+            top: 280%; } }
+        @media (max-width: 480px) {
+          .titles_companies_heading-decoration_articles::before {
+            transform: scale(0.7) translate(-70%, -50%);
+            top: 90%; } }
     .titles_companies_heading-decoration_presentations::before {
       content: '';
       background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg");
@@ -395,6 +420,9 @@ a {
       left: 50%;
       transform: translate(-50%, -50%);
       top: 170%; }
+      @media (max-width: 560px) {
+        .titles_companies_heading-decoration_presentations::before {
+          top: 220%; } }
     .titles_companies_heading-decoration_tools::before {
       content: '';
       background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/companies-img.svg");
@@ -406,6 +434,9 @@ a {
       left: 50%;
       transform: translate(-50%, -50%);
       top: 170%; }
+      @media (max-width: 560px) {
+        .titles_companies_heading-decoration_tools::before {
+          top: 220%; } }
   .titles_companies_subtitle {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 24px;
