@@ -105,6 +105,14 @@ a {
     border-radius: 14px;
     padding: 20px;
     padding-bottom: 40px;
+
+    @media (max-width: 1404px) {
+      margin: 0 40px;
+    }
+
+    @media (max-width: 800px) {
+      margin: 0 20px;
+    }
   }
 
   &_item {
@@ -431,6 +439,24 @@ a {
         line-height: 28px;
       }
 
+      &_inside {
+
+        @media (max-width: 608px) {
+          font-size: 48px;
+          line-height: 56px;
+        }
+
+        @media (max-width: 530px) {
+          font-size: 40px;
+          line-height: 48px;
+        }
+
+        @media (max-width: 430px) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+
       &-decoration {
 
         @mixin heading-decoration($url, $width, $height) {
@@ -480,6 +506,16 @@ a {
               $height: 344px
             );
             top: 200%;
+
+            @media (max-width: 560px) {
+              top: 280%;
+
+            }
+
+            @media (max-width: 480px) {
+              transform: scale(0.7) translate(-70%, -50%);
+              top: 90%;
+            }
           }
         }
 
@@ -492,6 +528,10 @@ a {
               $height: 293px
             );
             top: 170%;
+
+            @media (max-width: 560px) {
+              top: 220%;
+            }
           }
         }
 
@@ -504,6 +544,10 @@ a {
               $height: 293px
             );
             top: 170%;
+
+            @media (max-width: 560px) {
+              top: 220%;
+            }
           }
         }
       }
