@@ -589,3 +589,7 @@ a {
       line-height: 20px;
       font-weight: normal;
       margin-bottom: 8px; }
+    .cards_item_conferences {
+      padding: 40px;
+      position: relative;
+      margin: 0 auto; }

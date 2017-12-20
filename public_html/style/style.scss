@@ -747,5 +747,11 @@ a {
     &_text {
       @include fontParagraph();
     }
+
+    &_conferences {
+      padding: 40px;
+      position: relative;
+      margin: 0 auto;
+    }
   }
 }
