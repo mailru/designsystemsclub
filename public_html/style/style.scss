@@ -167,6 +167,12 @@ a {
   margin-bottom: 80px;
 }
 
+.conferences-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
 .tags-block {
   text-align: center;
   display: flex;
@@ -557,6 +563,21 @@ a {
             }
           }
         }
+
+        &_conferences {
+
+          &::before {
+            @include heading-decoration(
+              $url: '/img/bg-graphics/conferences-img.svg',
+              $width: 327px,
+              $height: 237px
+            );
+
+//            @media (max-width: 560px) {
+//              top: 220%;
+//            }
+          }
+        }
       }
     }
 
@@ -657,6 +678,11 @@ a {
 
   &_tools {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 816px;
+  }
+
+  &_conferences {
+    grid-template-columns: repeat(1, 1fr);
     max-width: 816px;
   }
 

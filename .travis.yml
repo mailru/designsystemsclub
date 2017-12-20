@@ -1,0 +1,7 @@
+language: node_js
+
+node_js:
+  - 8
+
+script:
+  - curl --ftp-create-dirs -T public_html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.designsyst.nichost.ru/home/designsyst

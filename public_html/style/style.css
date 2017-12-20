@@ -147,6 +147,11 @@ a {
   height: auto;
   margin-bottom: 80px; }
 
+.conferences-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px; }
+
 .tags-block {
   text-align: center;
   display: flex;
@@ -441,6 +446,16 @@ a {
       @media (max-width: 560px) {
         .titles_companies_heading-decoration_tools::before {
           top: 220%; } }
+    .titles_companies_heading-decoration_conferences::before {
+      content: '';
+      background-image: url("/img/bg-graphics/conferences-img.svg");
+      width: 327px;
+      height: 237px;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .titles_companies_subtitle {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 24px;
@@ -517,6 +532,9 @@ a {
   position: relative; }
   .cards_tools {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 816px; }
+  .cards_conferences {
+    grid-template-columns: repeat(1, 1fr);
     max-width: 816px; }
   @media (max-width: 1364px) {
     .cards {
