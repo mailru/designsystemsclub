@@ -227,7 +227,7 @@ a {
 
 .footer-block {
   width: 100%;
-  height: 340px;
+  height: 380px;
   background-image: url('/img/bg-graphics/bottom-central-img.svg'),
                     url('/img/bg-graphics/bottom-left-img.svg'),
                     url('/img/bg-graphics/bottom-right-img.svg');
@@ -247,6 +247,7 @@ a {
     color: $color-text;
     letter-spacing: 1px;
     margin: 0 20px;
+    margin-bottom: 32px;
 
     & a {
       font-weight: 600;
