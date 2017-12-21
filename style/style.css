@@ -329,6 +329,29 @@ a {
   @media (max-width: 400px) {
     .titles_companies {
       margin: 40px 20px; } }
+  .titles_companies_about {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    width: 680px;
+    margin-bottom: 36px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 80px; }
+    @media (max-width: 832px) {
+      .titles_companies_about {
+        width: auto; } }
+    @media (max-width: 560px) {
+      .titles_companies_about {
+        font-size: 20px;
+        line-height: 28px; } }
+    @media (max-width: 421px) {
+      .titles_companies_about {
+        font-size: 17px;
+        line-height: 24px; } }
   .titles_companies_heading {
     display: block;
     font-family: 'ProximaNova-Black', sans-serif;
