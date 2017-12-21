@@ -5,6 +5,9 @@ node_js:
 
 install: true
 
+before_script:
+  - npm install -g gulp-cli
+
 script:
   - npm run build
   - chmod -R 777 public_html
