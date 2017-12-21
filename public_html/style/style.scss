@@ -715,13 +715,13 @@ a {
     box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
     border-radius: 14px;
     padding: 0 20px 40px 20px;
-    cursor: pointer;
 
     &_logo img {
       width: 160px;
       height: 160px;
       margin: 0 auto;
       display: block;
+      cursor: pointer;
     }
 
     &_text-block {

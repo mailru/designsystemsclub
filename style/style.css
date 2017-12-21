@@ -562,13 +562,13 @@ a {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
     border-radius: 14px;
-    padding: 0 20px 40px 20px;
-    cursor: pointer; }
+    padding: 0 20px 40px 20px; }
     .cards_item_logo img {
       width: 160px;
       height: 160px;
       margin: 0 auto;
-      display: block; }
+      display: block;
+      cursor: pointer; }
     .cards_item_text-block {
       max-width: 308px;
       text-align: center;
