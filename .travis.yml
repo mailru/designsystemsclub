@@ -5,8 +5,7 @@ node_js:
 
 install: true
 
-
-
 script:
+  - npm run build
   - chmod -R 777 public_html
   - cd public_html && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://ftp.designsyst.nichost.ru/designsystemsclub.ru/docs/{} \;
