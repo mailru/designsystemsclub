@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="327" height="237" viewBox="0 0 327 237">
+  <defs>
+    <linearGradient id="conferences-img-a" x1="74.353%" x2="51.695%" y1="15.932%" y2="108.307%">
+      <stop offset="0%" stop-color="#F1D2FF"/>
+      <stop offset="100%" stop-color="#8F9FFF"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#conferences-img-a)" fill-rule="evenodd" opacity=".56">
+    <circle cx="228.5" cy="98.5" r="98.5"/>
+    <circle cx="168.5" cy="138.5" r="98.5"/>
+    <circle cx="98.5" cy="98.5" r="98.5"/>
+  </g>
+</svg>

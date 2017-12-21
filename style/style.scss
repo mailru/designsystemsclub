@@ -48,7 +48,7 @@ a {
 
 .hero-block {
   width: 100%;
-  height: 910px;
+  height: 680px;
   background-image: url('https://mailru.github.io/designsystemsclub/img/bg-graphics/top-left.svg'),
                     url('https://mailru.github.io/designsystemsclub/img/bg-graphics/top-right.svg');
   background-position: top 0px left 0px, top 100px right 0px;
@@ -167,6 +167,12 @@ a {
   margin-bottom: 80px;
 }
 
+.conferences-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
 .tags-block {
   text-align: center;
   display: flex;
@@ -221,7 +227,7 @@ a {
 
 .footer-block {
   width: 100%;
-  height: 340px;
+  height: 380px;
   background-image: url('/img/bg-graphics/bottom-central-img.svg'),
                     url('/img/bg-graphics/bottom-left-img.svg'),
                     url('/img/bg-graphics/bottom-right-img.svg');
@@ -241,6 +247,7 @@ a {
     color: $color-text;
     letter-spacing: 1px;
     margin: 0 20px;
+    margin-bottom: 32px;
 
     & a {
       font-weight: 600;
@@ -284,7 +291,7 @@ a {
     margin-left: 140px;
     padding-top: 200px;
 
-    @media (max-width: 892px) {
+    @media (max-width: 1100px) {
       margin-left: 80px;
     }
 
@@ -314,9 +321,9 @@ a {
 
       &::before {
         content: '';
-        background-image: url('https://mailru.github.io/designsystemsclub/img/bg-graphics/hero-img.svg');
-        width: 278px;
-        height: 266px;
+        background-image: url('http://designsystemsclub.ru/img/bg-graphics/hero-img.svg');
+        width: 194px;
+        height: 186px;
         position: absolute;
         z-index: 0;
         top: -159px;
@@ -557,6 +564,17 @@ a {
             }
           }
         }
+
+        &_conferences {
+
+          &::before {
+            @include heading-decoration(
+              $url: '/img/bg-graphics/conferences-img.svg',
+              $width: 327px,
+              $height: 237px
+            );
+          }
+        }
       }
     }
 
@@ -688,18 +706,23 @@ a {
     margin: 0 20px;
   }
 
+  &_conferences {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 816px;
+  }
+
   &_item {
     background: $color-bg;
     box-shadow: 0 24px 60px 0 rgba(0,0,0,0.12);
     border-radius: 14px;
     padding: 0 20px 40px 20px;
-    cursor: pointer;
 
     &_logo img {
       width: 160px;
       height: 160px;
       margin: 0 auto;
       display: block;
+      cursor: pointer;
     }
 
     &_text-block {
@@ -720,6 +743,36 @@ a {
 
     &_text {
       @include fontParagraph();
+    }
+
+    &_conferences {
+      padding: 40px;
+      position: relative;
+      margin: 0 auto;
+
+      @media (max-width: 560px) {
+        padding: 20px;
+      }
+
+      & iframe {
+        width: 672px;
+        height: 378px;
+
+        @media (max-width: 1280px) {
+          width: 560px;
+          height: 315px;
+        }
+
+        @media (max-width: 744px) {
+          width: 392px;
+          height: 220px;
+        }
+
+        @media (max-width: 480px) {
+          width: 274px;
+          height: 154px;
+        }
+      }
     }
   }
 }
