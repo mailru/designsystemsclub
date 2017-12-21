@@ -57,7 +57,7 @@ a {
 /* ============================ Containers ========================== */
 .hero-block {
   width: 100%;
-  height: 680px;
+  height: 600px;
   background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/top-left.svg"), url("https://mailru.github.io/designsystemsclub/img/bg-graphics/top-right.svg");
   background-position: top 0px left 0px, top 100px right 0px;
   background-repeat: no-repeat; }
@@ -237,7 +237,7 @@ a {
 /* ============================ Titles ========================== */
 .titles_hero {
   margin-left: 140px;
-  padding-top: 200px; }
+  padding-top: 100px; }
   @media (max-width: 1100px) {
     .titles_hero {
       margin-left: 80px; } }
@@ -268,11 +268,11 @@ a {
       height: 186px;
       position: absolute;
       z-index: 0;
-      top: -159px;
+      top: -80px;
       left: -53px; }
       @media (max-width: 832px) {
         .titles_hero_heading::before {
-          top: -100px;
+          top: -80px;
           left: -58px;
           transform: scale(0.7); } }
     .titles_hero_heading_1 {
