@@ -18,7 +18,6 @@
   "author": "Andrey Sundiev <a.sundiev@corp.mail.ru>",
   "license": "MIT",
   "devDependencies": {
-    "@paradigm/themes": "^0.11.0",
     "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
