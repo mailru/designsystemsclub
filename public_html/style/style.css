@@ -59,7 +59,7 @@ a {
   width: 100%;
   height: 600px;
   background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/top-left.svg"), url("https://mailru.github.io/designsystemsclub/img/bg-graphics/top-right.svg");
-  background-position: top 0px left 0px, top 100px right 0px;
+  background-position: top 0px left 0px, top 80px right 0px;
   background-repeat: no-repeat; }
   @media (max-width: 768px) {
     .hero-block {
