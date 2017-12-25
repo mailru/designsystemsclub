@@ -193,7 +193,7 @@ a {
 
 .footer-block {
   width: 100%;
-  height: 380px;
+  height: 480px;
   background-image: url("/img/bg-graphics/bottom-central-img.svg"), url("/img/bg-graphics/bottom-left-img.svg"), url("/img/bg-graphics/bottom-right-img.svg");
   background-position: bottom, bottom 40px left 40px, bottom 40px right 40px;
   background-repeat: no-repeat;
@@ -211,8 +211,10 @@ a {
     margin-bottom: 12px;
     color: #333333;
     letter-spacing: 1px;
-    margin: 0 20px;
-    margin-bottom: 32px; }
+    max-width: 700px;
+    margin: 32px auto; }
+    .footer-block_text_secondary {
+      color: #999999; }
     .footer-block_text a {
       font-weight: 600;
       text-decoration: none;
