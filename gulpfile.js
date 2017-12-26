@@ -12,7 +12,8 @@ var projectOptions = {
         dist: 'public_html/',
         data: {
             public: true,
-            publicPath: '/'
+            publicPath: '/',
+            cards: require('./data/companies-cards.json')
         }
     },
 };

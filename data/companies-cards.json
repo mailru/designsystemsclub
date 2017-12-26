@@ -1,0 +1,46 @@
+[
+  {
+    "type": "component",
+    "href": "companies/alfabank.html",
+    "img": "http://designsystemsclub.ru/img/logos/Alfabank.svg",
+    "title": "Feather",
+    "text": "Дизайн-команда одного из ведущих банков.",
+    "site": "https://alfa-laboratory.github.io/arui-feather/styleguide/"
+  },
+
+  {
+    "type": "component",
+    "href": "companies/gov.html",
+    "img": "http://designsystemsclub.ru/img/logos/gov.svg",
+    "title": "Дизайн Государственных Систем",
+    "text": "Единая платформа для сайтов государственных органов и учреждений.",
+    "site": "http://gov.design/"
+  },
+
+  {
+    "type": "component",
+    "href": "companies/mailru.html",
+    "img": "http://designsystemsclub.ru/img/logos/MailRu.svg",
+    "title": "Paradigm",
+    "text": "Портальная дизайн-команда постепенно унифицирует продукты.",
+    "site": "http://design.mail.ru/paradigm/"
+  },
+
+  {
+    "type": "component",
+    "href": "companies/rambler.html",
+    "img": "http://designsystemsclub.ru/img/logos/Rambler.svg",
+    "title": "Rambler",
+    "text": "Дизайн-команда одного из крупнейших отечественных порталов.",
+    "site": "https://brand.rambler.ru/"
+  },
+
+  {
+    "type": "component",
+    "href": "companies/yandex.html",
+    "img": "http://designsystemsclub.ru/img/logos/Yandex.svg",
+    "title": "Лего",
+    "text": "Платформа от создателей БЭМ для унификации продуктов компании.",
+    "site": "https://ru.bem.info/"
+  }
+]
