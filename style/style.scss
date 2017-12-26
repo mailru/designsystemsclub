@@ -749,9 +749,14 @@ a {
     grid-template-columns: repeat(1, 1fr);
 
     @media (max-width: 768px) {
-      max-width: 0;
       margin: 0 40px;
+      max-width: inherit;
     }
+
+    @media (max-width: 530px) {
+      margin: 0 auto;
+    }
+
   }
 
   &_item {

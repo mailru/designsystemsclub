@@ -591,8 +591,11 @@ a {
     grid-template-columns: repeat(1, 1fr); }
     @media (max-width: 768px) {
       .cards_conferences {
-        max-width: 0;
-        margin: 0 40px; } }
+        margin: 0 40px;
+        max-width: inherit; } }
+    @media (max-width: 530px) {
+      .cards_conferences {
+        margin: 0 auto; } }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
