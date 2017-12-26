@@ -524,9 +524,7 @@ a {
     padding: 0 40px; }
     @media (max-width: 483px) {
       .button_main {
-        width: 90%; } }
-    @media (max-width: 390px) {
-      .button_main {
+        width: 90%;
         padding: 8px 20px; } }
     .button_main:hover {
       background: #f5ec3c; }
@@ -591,6 +589,10 @@ a {
       margin: 0 20px; } }
   .cards_conferences {
     grid-template-columns: repeat(1, 1fr); }
+    @media (max-width: 768px) {
+      .cards_conferences {
+        max-width: 0;
+        margin: 0 40px; } }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
