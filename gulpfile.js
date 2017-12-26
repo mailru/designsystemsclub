@@ -7,13 +7,16 @@ var gulp = require('gulp'),
 
 var assets = ['style/**/*','fonts/**/*','img/**/*','js/**/*'];
 
+var cards = require('./data/companies-cards.json')
+
 var projectOptions = {
     public: {
         dist: 'public_html/',
         data: {
             public: true,
             publicPath: '/',
-            cards: require('./data/companies-cards.json')
+            cards_component: cards.filter((card) => card.type === 'component'),
+            cards_simple: cards.filter((card) => card.type === 'simple')
         }
     },
 };

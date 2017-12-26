@@ -37,7 +37,7 @@ block body
               a(href=href).tags-block_tag.tags-block_tag-secondary
                   | другие ссылки 
         
-        each card in cards
+        each card in cards_component
           +card_item(
             card.href,
             card.img,
@@ -54,44 +54,15 @@ block body
           | Нет публичной ссылки на сайт или репозиторий
 
       .cards
-        .cards_item
-          a(href="companies/acronis.html").cards_item_logo
-            img(src="http://designsystemsclub.ru/img/logos/Acronis.svg")
-          .cards_item_text-block
-            .cards_item_title
-              | Acronis
-            .cards_item_text
-              | Унификация веб- и десктопных продуктов.
-          .tags-block.tags-block_inCard
-            a(href="companies/acronis.html").tags-block_tag.tags-block_tag-secondary
-                | другие ссылки 
-
-        .cards_item
-          a(href="companies/megafon.html").cards_item_logo
-            img(src="http://designsystemsclub.ru/img/logos/Megafon.svg")
-          .cards_item_text-block
-            .cards_item_title
-              | Мегафон
-            .cards_item_text
-              | Дизайн-команда отвечает за портал, интернет-магазин, личный кабинет и цифровые гайдлайны бренда.
-          .tags-block.tags-block_inCard
-            a(href="http://ui.megafon.ru/").tags-block_tag
-                | сайт
-            a(href="companies/megafon.html").tags-block_tag.tags-block_tag-secondary
-                | другие ссылки
-                
-        .cards_item
-          a(href="companies/tinkoff.html").cards_item_logo
-            img(src="http://designsystemsclub.ru/img/logos/Tinkoff.svg")
-          .cards_item_text-block
-            .cards_item_title
-              | Тинькофф
-            .cards_item_text
-              | Дизайн-команда одного из самых передовых банков.
-          .tags-block.tags-block_inCard
-            a(href="companies/tinkoff.html").tags-block_tag.tags-block_tag-secondary
-                | другие ссылки    
         
+        each card in cards_simple
+          +card_item(
+            card.href,
+            card.img,
+            card.title,
+            card.text,
+            card.site
+          ) 
         
     .conferences-block
       .titles.titles_companies

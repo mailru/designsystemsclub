@@ -42,5 +42,30 @@
     "title": "Лего",
     "text": "Платформа от создателей БЭМ для унификации продуктов компании.",
     "site": "https://ru.bem.info/"
+  },
+
+  {
+    "type": "simple",
+    "href": "companies/acronis.html",
+    "img": "http://designsystemsclub.ru/img/logos/Acronis.svg",
+    "title": "Acronis",
+    "text": "Унификация веб- и десктопных продуктов."
+  },
+
+  {
+    "type": "simple",
+    "href": "companies/megafon.html",
+    "img": "http://designsystemsclub.ru/img/logos/Megafon.svg",
+    "title": "Мегафон",
+    "text": "Дизайн-команда отвечает за портал, интернет-магазин, личный кабинет и цифровые гайдлайны бренда.",
+    "site": "http://ui.megafon.ru/"
+  },
+
+  {
+    "type": "simple",
+    "href": "companies/tinkoff.html",
+    "img": "http://designsystemsclub.ru/img/logos/Tinkoff.svg",
+    "title": "Тинькофф",
+    "text": "Дизайн-команда одного из самых передовых банков."
   }
 ]
