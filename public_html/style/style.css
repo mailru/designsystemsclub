@@ -212,7 +212,8 @@ a {
     color: #333333;
     letter-spacing: 1px;
     max-width: 700px;
-    margin: 32px auto; }
+    margin: 32px auto;
+    padding: 0 20px; }
     .footer-block_text_secondary {
       color: #999999; }
     .footer-block_text a {
@@ -349,7 +350,8 @@ a {
     @media (max-width: 560px) {
       .titles_companies_about {
         font-size: 20px;
-        line-height: 28px; } }
+        line-height: 28px;
+        padding: 0 20px; } }
     @media (max-width: 421px) {
       .titles_companies_about {
         font-size: 17px;
@@ -412,6 +414,9 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media (max-width: 400px) {
+        .titles_companies_heading-decoration_true::before {
+          top: 120%; } }
     .titles_companies_heading-decoration_basic::before {
       content: '';
       background-image: url("https://mailru.github.io/designsystemsclub/img/bg-graphics/articles-bottom.svg");
@@ -511,7 +516,7 @@ a {
   box-shadow: none;
   font-family: 'ProximaNova-Bold', sans-serif;
   font-size: 20px;
-  line-height: 60px;
+  min-height: 60px;
   color: #333333; }
   .button_main {
     background: #FFF63F;
@@ -519,7 +524,10 @@ a {
     padding: 0 40px; }
     @media (max-width: 483px) {
       .button_main {
-        width: 100%; } }
+        width: 90%; } }
+    @media (max-width: 390px) {
+      .button_main {
+        padding: 8px 20px; } }
     .button_main:hover {
       background: #f5ec3c; }
   .button_back {
@@ -582,8 +590,7 @@ a {
     .cards {
       margin: 0 20px; } }
   .cards_conferences {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 816px; }
+    grid-template-columns: repeat(1, 1fr); }
   .cards_item {
     background: #ffffff;
     box-shadow: 0 24px 60px 0 rgba(0, 0, 0, 0.12);
