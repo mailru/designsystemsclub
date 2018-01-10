@@ -37,6 +37,15 @@
 
   {
     "type": "component",
+    "href": "companies/kontur.html",
+    "img": "http://designsystemsclub.ru/img/logos/Kontur.svg",
+    "title": "Контур.Гайды",
+    "text": "Первоисточник требований к дизайну интерфейсов Контура",
+    "site": "https://guides.kontur.ru/"
+  },
+
+  {
+    "type": "component",
     "href": "companies/yandex.html",
     "img": "http://designsystemsclub.ru/img/logos/Yandex.svg",
     "title": "Лего",

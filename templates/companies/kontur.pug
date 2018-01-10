@@ -1,0 +1,20 @@
+extends ../../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="../index.html").button.button_back Вернуться
+
+    .company-page_logo
+      img(src="https://mailru.github.io/designsystemsclub/img/logos/Kontur.svg")
+
+    p.titles_companies_about
+      | Первоисточник требований к дизайну интерфейсов Контура
+
+    .tags-block
+      a(href="https://brand.rambler.ru/").tags-block_tag
+          | сайт
+      a(href="http://tech.skbkontur.ru/react-ui/#/components/Autocomplete").tags-block_tag
+          | репозиторий
+
+
+    include ../../base_templates/footer.pug  
