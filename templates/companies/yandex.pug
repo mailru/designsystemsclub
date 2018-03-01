@@ -15,6 +15,10 @@ block body
           | сайт
       a(href="#tools").tags-block_tag
           | инструменты
+      a(href="https://github.com/bemdesign").tags-block_tag
+          | репозиторий
+      a(href="#presentations").tags-block_tag
+          | презентации
               
               
     .tools-block
@@ -43,6 +47,48 @@ block body
               | Фреймворк для дизайнеров интерфейсов, работающих над большими проектами.
 
 
+        a(href="http://bem.design").cards_item
+          .cards_item_logo
+            img(src="http://designsystemsclub.ru/img/logos/BEM.svg")
+          .cards_item_text-block
+            .cards_item_title
+              | BEM Design
+            .cards_item_text
+              | Масштабируемая дизайн библиотека на основе БЭМ
+
+
+      .articles-block
+        .titles.titles_companies
+          h2#articles.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_articles
+            | Статьи
+
+        .articles-block_container
+          a(href="https://habrahabr.ru/company/yamoney/blog/341028/").articles-block_item
+            .articles-block_item-wrapper
+              .articles-block_item-header
+                | Прототипирование на продакшн-технологиях
+              .articles-block_item-subtitle
+                .articles-block_item-author 
+                  | Михаил Колосков
+                .articles-block_item-source 
+                  | habrahabr.ru
+                  
+      .articles-block
+        .titles.titles_companies
+          h2#presentations.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_presentations
+            | Презентации
+
+        .articles-block_container
+          a(href="https://www.youtube.com/watch?v=kDmQcueD4Jk&t=21390s").articles-block_item
+            .articles-block_item-wrapper
+              .articles-block_item-header
+                | Зачем продакшн технологии в дизайне
+              .articles-block_item-subtitle
+                .articles-block_item-author 
+                  | Михаил Колосков
+                .articles-block_item-source 
+                  | youtube.com
+                
 
 
     include ../../base_templates/footer.pug
