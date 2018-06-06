@@ -10,6 +10,15 @@
 
   {
     "type": "component",
+    "href": "companies/chulakov.html",
+    "img": "http://designsystemsclub.ru/img/logos/Chulakov.svg",
+    "title": "Студия Олега Чулакова",
+    "text": "Платформа для корпоративных сайтов Студии.",
+    "site": "https://design.chulakov.ru/"
+  },
+
+  {
+    "type": "component",
     "href": "companies/gov.html",
     "img": "http://designsystemsclub.ru/img/logos/gov.svg",
     "title": "Дизайн Государственных Систем",
