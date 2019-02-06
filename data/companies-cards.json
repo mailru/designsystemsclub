@@ -7,6 +7,15 @@
     "text": "Дизайн-команда одного из ведущих банков.",
     "site": "http://design.alfabank.ru/"
   },
+  
+  {
+    "type": "component",
+    "href": "companies/barsgroup.html",
+    "img": "http://designsystemsclub.ru/img/logos/BARSGroup.svg",
+    "title": "BARS Group",
+    "text": "Дизайн-команда крупного федерального разработчика.",
+    "site": "https://design.bars.group/"
+  },
 
   {
     "type": "component",
