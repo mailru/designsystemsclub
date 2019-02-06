@@ -11,7 +11,7 @@ block body
       | Дизайн-команда крупного федерального разработчика работает над унификацией продуктов для государства и бизнеса.
 
     .tags-block
-      a(href="https://design.bars.group/"  ).tags-block_tag
+      a(href="https://design.bars.group/").tags-block_tag
           | сайт        
 
 
