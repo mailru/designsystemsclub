@@ -1,7 +1,7 @@
 {
   "name": "ds-club",
   "version": "1.0.0",
-  "description": "",
+  "description": "Каталог отечественных компонентных дизайн-систем, реализованных на технологическом уровне. Живые гайдлайны, статьи, презентации, выступления и другие материалы о них. # Как попасть в каталог? Ваша дизайн-система должна иметь компоненты на технологическом уровне, не просто UI Kit в Sketch. Напишите в Твиттер Андрею Сундиеву (https://twitter.com/asundiev) или Юрию Ветрову (https://twitter.com/jvetrau), мы оперативно добавим вас (лучше сразу прислать логотип в векторе и список ссылок). # Кто и зачем создал каталог? Сайт создан группой энтузиастов: Андрей Сундиев и Юрий Ветров из Mail.Ru Group. Мы давно занимаемся развитием дизайн-системы в компании и очень хотим, чтобы отечественные компании активнее вкладывались в собственные дизайнерско-технологические платформы. Верим, чтобы приведённые в каталоге примеры подскажут вам, как начать или подстегнут уже существующие инициативы.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mailru/designsystemsclub.git"
+    "url": "git+ssh://git@github.com/mailru/designsystemsclub.git"
   },
   "author": "Andrey Sundiev <a.sundiev@corp.mail.ru>",
   "license": "MIT",
@@ -26,5 +26,10 @@
     "jstransformer-markdown-it": "^2.0.0",
     "pug-lint": "^2.4.0",
     "yargs": "^8.0.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mailru/designsystemsclub/issues"
+  },
+  "homepage": "https://github.com/mailru/designsystemsclub#readme",
+  "dependencies": {}
 }
