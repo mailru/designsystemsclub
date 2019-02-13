@@ -11,4 +11,4 @@ before_script:
 script:
   - npm run build
   - chmod -R 777 public_html
-  - cd public_html && find . -type f -exec curl -v --ftp-create-dirs -T '{}' -u $FTP_USER:$FTP_PASSWORD ftp://ftp.designsyst.nichost.ru/{} \;
+  - cd public_html && find . -type f -exec curl -v --disable-epsv --ftp-create-dirs -T '{}' -u $FTP_USER:$FTP_PASSWORD ftp://ftp.designsyst.nichost.ru/{} \;
