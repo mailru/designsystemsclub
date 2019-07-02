@@ -37,6 +37,15 @@
 
   {
     "type": "component",
+    "href": "companies/ivi.html",
+    "img": "http://designsystemsclub.ru/img/logos/Ivi.svg",
+    "title": "Ivi.ru",
+    "text": "Первая версия дизайн-системы от команды онлайн-кинотеатра.",
+    "site": "https://design.ivi.ru/"
+  },
+
+  {
+    "type": "component",
     "href": "companies/mailru.html",
     "img": "http://designsystemsclub.ru/img/logos/MailRu.svg",
     "title": "Paradigm",
