@@ -1,0 +1,38 @@
+extends ../../base_templates/base
+
+block body
+  .content-block.content-block_company
+    a(href="../index.html").button.button_back Вернуться
+
+    .company-page_logo
+      img(src="http://designsystemsclub.ru/img/logos/Ivi.svg")
+
+    p.titles_companies_about
+      | Первая версия дизайн-системы от команды онлайн-кинотеатра.
+
+    .tags-block
+      a(href="https://design.ivi.ru/").tags-block_tag
+          | сайт
+      a(href="#articles").tags-block_tag
+          | статьи
+
+
+    .articles-block
+      .titles.titles_companies
+        h2#articles.titles_companies_heading.titles_companies_heading_inside.titles_companies_heading-decoration_articles
+          | Статьи
+
+      .articles-block_container
+        a(href="https://link.medium.com/Jl6VDhQj0X").articles-block_item
+          .articles-block_item-wrapper
+            .articles-block_item-header
+              | От UI-kit до дизайн-системы. Опыт онлайн-кинотеатра Иви
+            .articles-block_item-subtitle
+              .articles-block_item-author 
+                | Илья Хромов
+              .articles-block_item-source 
+                | medium.com
+                
+
+
+    include ../../base_templates/footer.pug
