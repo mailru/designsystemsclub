@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-livereload": "^3.8.1",
     "gulp-pug": "^3.3.0",
     "gulp-serve": "^1.4.0",
